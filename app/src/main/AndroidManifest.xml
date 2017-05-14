@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.developer.ashwoolford.moviesfreak" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/new_app_logoo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.developer.ashwoolford.moviesfreak.MainActivity"
+            android:configChanges="orientation|screenSize" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.developer.ashwoolford.moviesfreak.search_activity.SearchResult"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+        <activity
+            android:name="com.developer.ashwoolford.moviesfreak.details_activity.DetailsActivity"
+            android:configChanges="orientation|screenSize" >
+        </activity>
+        <activity
+            android:name="com.developer.ashwoolford.moviesfreak.Trailer.TrailerActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.developer.ashwoolford.moviesfreak.tagResult.TagResultActivity"
+            android:configChanges="orientation|screenSize" >
+>
+        </activity>
+        <activity
+            android:name="com.developer.ashwoolford.moviesfreak.AccountPackage.AccountPage"
+            android:configChanges="orientation|screenSize" >
+>
+        </activity>
+        <activity
+            android:name="com.developer.ashwoolford.moviesfreak.AccountPackage.ShowList"
+            android:configChanges="orientation|screenSize" >
+>
+        </activity>
+    </application>
+
+</manifest>

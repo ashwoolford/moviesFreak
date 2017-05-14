@@ -1,0 +1,252 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             tools:context=".second_fragment.Fragment2">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="#F5F5F5"
+        android:id="@+id/linerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scrollView"
+            android:layout_gravity="center_horizontal">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <com.mancj.materialsearchbar.MaterialSearchBar
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/searchView"
+                    app:hint="Search on Movie Freak"
+                    app:theme="@style/AppTheme.PopupOverlay"
+                    app:maxSuggestionsCount="10"
+                    android:layout_margin="10dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Suggested movies"
+                    android:layout_margin="10dp"
+                    android:layout_marginTop="40dp"
+                    android:id="@+id/NtitleView"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_margin="10dp"
+                    android:id="@+id/recycle"/>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="30dp"
+                    android:background="#fff">
+                    <View
+                        style="@style/Divider"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Discover popular movies"
+                        android:id="@+id/discoverPopuler"
+                        android:layout_marginTop="10dp"
+                        android:layout_margin="10dp"
+                        android:textSize="15dp"/>
+                    <View
+                        style="@style/Divider"
+                        android:layout_marginTop="10dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="Choose your favorite tag"
+                        android:layout_marginTop="10dp"
+                        android:textSize="15dp"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_margin="10dp"
+                        android:orientation="horizontal">
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:background="@drawable/button_shape"
+                            style="?android:attr/borderlessButtonStyle"
+                            android:layout_margin="4dp"
+                            android:textColor="#8c8c8c"
+                            android:id="@+id/horror"
+                            android:layout_weight="3"
+                            android:textSize="12sp"
+                            android:text="#horror movie"
+                            android:textAllCaps="false"/>
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:background="@drawable/button_shape"
+                            android:text="#adventure"
+                            android:textSize="12sp"
+                            android:layout_weight="3"
+                            android:id="@+id/adventure"
+                            android:textColor="#8c8c8c"
+                            style="?android:attr/borderlessButtonStyle"
+                            android:layout_margin="4dp"
+                            android:textAllCaps="false"/>
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_weight="3"
+                            android:background="@drawable/button_shape"
+                            android:textColor="#8c8c8c"
+                            style="?android:attr/borderlessButtonStyle"
+                            android:layout_margin="4dp"
+                            android:text="#sc-fi"
+                            android:textSize="12sp"
+                            android:id="@+id/sc_fi"
+                            android:textAllCaps="false"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_margin="10dp"
+                        android:orientation="horizontal">
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:background="@drawable/button_shape"
+                            android:text="#romance"
+                            android:layout_weight="3"
+                            android:textSize="12sp"
+                            android:id="@+id/romance"
+                            style="?android:attr/borderlessButtonStyle"
+                            android:layout_margin="4dp"
+                            android:textColor="#8c8c8c"
+                            android:textAllCaps="false"/>
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:background="@drawable/button_shape"
+                            style="?android:attr/borderlessButtonStyle"
+                            android:textColor="#8c8c8c"
+                            android:layout_weight="3"
+                            android:text="#animation"
+                            android:textSize="12sp"
+                            android:id="@+id/animation"
+                            android:layout_margin="4dp"
+                            android:textAllCaps="false"/>
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:background="@drawable/button_shape"
+                            style="?android:attr/borderlessButtonStyle"
+                            android:textColor="#8c8c8c"
+                            android:text="#hacking"
+                            android:layout_weight="3"
+                            android:textSize="12sp"
+                            android:id="@+id/hacking"
+                            android:layout_margin="4dp"
+                            android:textAllCaps="false"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_margin="10dp"
+                        android:orientation="horizontal">
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:background="@drawable/button_shape"
+                            android:text="#comedy"
+                            android:textSize="12sp"
+                            android:layout_weight="3"
+                            android:id="@+id/comedy"
+                            android:textColor="#8c8c8c"
+                            style="?android:attr/borderlessButtonStyle"
+                            android:layout_margin="4dp"
+                            android:textAllCaps="false"/>
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:background="@drawable/button_shape"
+                            android:text="#family"
+                            android:layout_weight="3"
+                            android:textSize="12sp"
+                            android:id="@+id/family"
+                            android:textColor="#8c8c8c"
+                            style="?android:attr/borderlessButtonStyle"
+                            android:layout_margin="4dp"
+                            android:layout_marginBottom="20dp"
+                            android:textAllCaps="false"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_margin="10dp"
+                        android:orientation="horizontal">
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:background="@drawable/button_shape"
+                            android:text="#drama"
+                            android:textSize="12sp"
+                            android:id="@+id/drama"
+                            android:layout_weight="3"
+                            android:textColor="#8c8c8c"
+                            style="?android:attr/borderlessButtonStyle"
+                            android:layout_margin="4dp"
+                            android:textAllCaps="false"/>
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:background="@drawable/button_shape"
+                            android:text="#action"
+                            android:textSize="12sp"
+                            android:layout_weight="3"
+                            android:id="@+id/action"
+                            android:textColor="#8c8c8c"
+                            style="?android:attr/borderlessButtonStyle"
+                            android:layout_margin="4dp"
+                            android:textAllCaps="false"/>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:id="@+id/imageView2"
+        android:layout_gravity="center_horizontal|center"/>
+
+</FrameLayout>

@@ -1,0 +1,83 @@
+{
+  "project_info": {
+    "project_number": "87056978393",
+    "firebase_url": "https://movies-freak-8df21.firebaseio.com",
+    "project_id": "movies-freak-8df21",
+    "storage_bucket": "movies-freak-8df21.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:87056978393:android:be79c84227267ab4",
+        "android_client_info": {
+          "package_name": "com.example.ashwoolford.moviesfreak"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "87056978393-2t5oh9gslavojl7k3qk1dh952s8k7s97.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwv8lZEnC0VuRYObfg9-zcM3XhZs4-wn8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "87056978393-2t5oh9gslavojl7k3qk1dh952s8k7s97.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:87056978393:android:5acd221eead6833f",
+        "android_client_info": {
+          "package_name": "com.developer.ashwoolford.moviesfreak"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "87056978393-2t5oh9gslavojl7k3qk1dh952s8k7s97.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwv8lZEnC0VuRYObfg9-zcM3XhZs4-wn8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "87056978393-2t5oh9gslavojl7k3qk1dh952s8k7s97.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

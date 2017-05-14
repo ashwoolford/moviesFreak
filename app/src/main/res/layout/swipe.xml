@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                                    android:layout_width="160dp"
+                                    android:layout_height="250dp"
+                                    android:orientation="horizontal"
+                                    android:layout_marginRight="10dp"
+                                    app:cardUseCompatPadding="true"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="0dp"
+        android:background="#fff"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/itemImage"
+            android:layout_width="160dp"
+            android:clickable="true"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="fitXY"
+            android:src="@drawable/mp2" />
+
+
+        <LinearLayout
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4.7"
+                android:id="@+id/tvTitle"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center"/>
+
+
+            <ImageView
+                android:layout_width="14dp"
+                android:src="@drawable/star"
+
+                android:layout_height="14dp"
+                android:layout_marginLeft="3dp"
+                android:layout_gravity="center"
+                android:id="@+id/rattingView"/>
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:background="@drawable/button_shape"
+                android:elevation="4dp"
+
+                android:layout_gravity="center"
+                android:layout_marginLeft="65dp"
+                android:textAllCaps="false"
+                android:text="@string/more"
+                android:id="@+id/SuggestedButton"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
